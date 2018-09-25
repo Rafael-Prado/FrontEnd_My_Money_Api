@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     output: {
         path: __dirname + '/public',
         filename: './app.js'
@@ -14,7 +14,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.js', 'jsx'],
+        extensions: ['', '.js', '.jsx'],
         alias:{
             modules: __dirname + '/node_modules',
             jquery:'modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js',
