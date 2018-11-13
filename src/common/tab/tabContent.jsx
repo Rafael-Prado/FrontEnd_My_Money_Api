@@ -10,7 +10,8 @@ class TabContent extends Component {
     const visible = this.props.tab.visible[this.props.id]
     return (
       <If test={visible}>
-        <div id={this.props.id} className={`tab-pane ${selected ? 'active' : ''}`}>
+        <div id={this.props.id} 
+            className={`tab-pane ${selected ? 'active' : ''}`}>
           {this.props.children}
         </div>
       </If>
